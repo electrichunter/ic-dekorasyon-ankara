@@ -9,6 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="tr">
+        <head>
+        <link rel="icon" href="/deco.ico" />
+      </head>
       <body className="bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white font-sans antialiased">
         {/* Ana konteyner */}
         <div className="min-h-screen flex">
