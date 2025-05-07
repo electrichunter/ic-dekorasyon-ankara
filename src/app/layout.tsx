@@ -10,14 +10,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="tr">
       <body className="bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white font-sans antialiased">
-        <div className="flex">
-          {/* Sidebar */}
-          <div className="fixed top-0 left-0 h-screen w-64">
-            <Sidebar />
+        {/* Ana konteyner */}
+        <div className="min-h-screen flex">
+   <div className="fixed row-span-3 ">
+          <Sidebar />
           </div>
-
           {/* İçerik */}
-          <main className="ml-64 flex-1 min-h-screen flex items-center justify-center p-6">
+          <main className="flex-1 p-4 sm:ml-64 transition-all duration-300 ease-in-out">
             {children}
           </main>
         </div>
